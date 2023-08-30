@@ -1,0 +1,1201 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Estilos para los enlaces de navegación */
+ul.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul.nav-links a {
+    color: #4a7e16;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+ul.nav-links a:hover {
+    color: #FF0000;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul.nav-links {
+        margin-top: 10px;
+    }
+
+    ul.nav-links li {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .user-actions {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+
+/* Estilo para ocultar los productos adicionales */
+.product.hidden-product {
+    display: none;
+}
+
+/* Estilos para el botón "Ver Más" y su label */
+#ver-mas-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#ver-mas {
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.2s ease;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido del botón */
+    align-items: center; /* Centra verticalmente el contenido del botón */
+    margin: 0 auto;
+}
+
+/* Estilo para el label del botón "Ver Más" */
+label[for="ver-mas"] {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333; /* Cambia esto al color */
+    cursor: pointer; /* Agrega un cursor para indicar que se puede hacer clic en el label */
+    background-color: #4a7e16; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno del label */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.2s ease; /* Transición en el color de fondo */
+}
+
+/* Estilos para las imágenes de los productos */
+.product img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+/* Estilos para los productos */
+.product {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los enlaces de navegación */
+ul.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px; /* Agregamos margen izquierdo para separarlos del borde izquierdo */
+}
+
+ul.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+ul.nav-links a {
+    color: #4a7e16;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+
+ul.nav-links a:hover {
+    color: #FF0000;
+}
+/* Estilo para los enlaces de registro e inicio de sesión */
+.user-actions a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #4a7e16; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-right: 10px; /* Espaciado derecho entre los enlaces */
+}
+
+.user-actions a:hover {
+    background-color: #FF0000; /* Cambia el color de fondo al pasar el mouse */
+}
+/* Estilo para la sección de Categorías */
+.categories {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para cada categoría */
+.categories .category {
+    display: inline-block; /* Para que estén una al lado de la otra */
+    margin: 0 10px; /* Espacio entre categorías */
+    text-align: center;
+}
+
+.categories .category h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Estilo para las imágenes de categorías */
+.categories .category img {
+    max-width: 150px; /* Tamaño máximo de las imágenes */
+    height: auto; /* Para mantener la proporción original */
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.categories .category p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.categories .category a {
+    display: block;
+    margin-top: 10px;
+    background-color: #4a7e16;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.categories .category a:hover {
+    background-color: #FF0000;
+}
+/* Estilos específicos para la sección "Esenciales" */
+div.Esenciales {
+    background-color: #f5f5f5; /* Cambia el color de fondo */
+    padding: 20px; /* Agrega espaciado interno */
+    border: 1px solid #ddd; /* Agrega un borde */
+    display: flex; /* Utiliza el modelo de caja flexible para alinear elementos en fila */
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben en el ancho disponible */
+}
+
+/* Estilos para el título "Esenciales" */
+div.Esenciales h3 {
+    font-size: 24px; /* Cambia el tamaño del texto del título */
+    color: #333; /* Cambia el color del texto del título */
+    margin: 0; /* Elimina el margen alrededor del título */
+    width: 100%; /* Asegura que el título ocupe todo el ancho disponible */
+    text-align: start; /* Centra el título horizontalmente */
+}
+
+/* Estilos para las imágenes dentro de "Esenciales" */
+div.Esenciales img {
+    max-width: 100px; /* Reduce el tamaño máximo de las imágenes */
+    height: auto; /* Para mantener la proporción original */
+    margin: 5px; /* Reduce el margen alrededor de las imágenes */
+}
+
+/* Estilos para el párrafo de descripción */
+div.Esenciales p {
+    font-size: 16px; /* Cambia el tamaño del texto del párrafo */
+    color: #666; /* Cambia el color del texto del párrafo */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 5px; /* Reduce el margen alrededor del párrafo */
+}
+
+/* Estilos para el enlace "Ver más" */
+div.Esenciales .ver-mas {
+    display: inline-block; /* Para que el enlace sea un bloque y tenga márgenes */
+    margin-top: 5px; /* Reduce el margen superior al enlace */
+    padding: 5px 10px; /* Agrega un relleno al enlace */
+    background-color: #4a7e16; /* Cambia el color de fondo del enlace */
+    color: #fff; /* Cambia el color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border-radius: 5px; /* Agrega bordes redondeados al enlace */
+    text-align: center; /* Centra el enlace horizontalmente */
+    width: auto; /* Deja que el ancho del enlace se ajuste automáticamente */
+}
+
+/* Estilos para el botón "Indispensables en la Cocina" */
+div.Esenciales .btn-indispensables {
+    margin-left: auto; /* Empuja el botón hacia la derecha */
+}
+/* Estilos para el enlace "Ver más" dentro de la categoría "Esenciales" */
+.ver-mas-esenciales {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4a7e16;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Cambia el color de fondo del enlace al pasar el mouse sobre él */
+.ver-mas-esenciales:hover {
+    background-color: #3b6410; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Estilos para la categoría "Con Garantía" */
+div.Con.Garantia {
+    background-color: #f5f5f5; /* Cambia el color de fondo */
+    padding: 20px; /* Agrega espaciado interno */
+    border: 1px solid #ddd; /* Agrega un borde */
+    display: flex; /* Utiliza el modelo de caja flexible para alinear elementos en fila */
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+}
+
+/* Estilos para las imágenes dentro de "Con Garantía" */
+div.Con.Garantia img {
+    max-width: 100px; /* Reduce el tamaño máximo de las imágenes */
+    height: auto; /* Para mantener la proporción original */
+    margin-right: 20px; /* Agrega un margen derecho más amplio entre las imágenes */
+}
+
+/* Estilos para el título "Con Garantía" */
+div.Con.Garantia h3 {
+    font-size: 24px; /* Cambia el tamaño del texto del título */
+    color: #333; /* Cambia el color del texto del título */
+    margin-right: 10px; /* Agrega un margen derecho entre el título y las imágenes */
+}
+
+/* Estilos para el párrafo de descripción */
+div.Con.Garantia p {
+    font-size: 16px; /* Cambia el tamaño del texto del párrafo */
+    color: #666; /* Cambia el color del texto del párrafo */
+}
+
+/* Estilos para el enlace "Ver más" */
+div.Con.Garantia a.ver-mas-Con-Garantia {
+    display: inline-block; /* Para que el enlace sea un bloque y tenga márgenes */
+    margin-top: 10px; /* Agrega un margen superior al enlace */
+    padding: 5px 10px; /* Agrega un relleno al enlace */
+    background-color: #4a7e16; /* Cambia el color de fondo del enlace */
+    color: #fff; /* Cambia el color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border-radius: 5px; /* Agrega bordes redondeados al enlace */
+}
+
+/* Estilos específicos para la sección "Ofertas" */
+div.Ofertas {
+    background-color: #f5f5f5; /* Cambia el color de fondo */
+    padding: 20px; /* Agrega espaciado interno */
+    border: 1px solid #ddd; /* Agrega un borde */
+    display: flex; /* Utiliza el modelo de caja flexible para alinear elementos en fila */
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+}
+
+/* Estilos para las imágenes dentro de "Ofertas" */
+div.Ofertas img {
+    max-width: 100px; /* Reduce el tamaño máximo de las imágenes */
+    height: auto; /* Para mantener la proporción original */
+    margin-right: 20px; /* Agrega un margen derecho entre las imágenes */
+}
+
+/* Estilos para el título "Ofertas" */
+div.Ofertas h3 {
+    font-size: 24px; /* Cambia el tamaño del texto del título */
+    color: #333; /* Cambia el color del texto del título */
+    margin-right: 10px; /* Agrega un margen derecho entre el título y las imágenes */
+}
+
+/* Estilos para el párrafo de descripción */
+div.Ofertas p {
+    font-size: 16px; /* Cambia el tamaño del texto del párrafo */
+    color: #666; /* Cambia el color del texto del párrafo */
+}
+
+/* Estilos para el enlace "Ver más" */
+div.Ofertas a {
+    display: inline-block; /* Para que el enlace sea un bloque y tenga márgenes */
+    margin-top: 10px; /* Agrega un margen superior al enlace */
+    padding: 5px 10px; /* Agrega un relleno al enlace */
+    background-color: #4a7e16; /* Cambia el color de fondo del enlace */
+    color: #fff; /* Cambia el color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border-radius: 5px; /* Agrega bordes redondeados al enlace */
+}
+/* Estilos para el slider */
+.slider {
+    display: flex; /* Utiliza el modelo de caja flexible para alinear elementos en fila */
+    align-items: center; /* Centra verticalmente los elementos en el slider */
+}
+
+/* Estilos para cada slide */
+.slide {
+    display: flex; /* Utiliza el modelo de caja flexible para alinear elementos en fila */
+    align-items: center; /* Centra verticalmente los elementos en el slide */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 20px; /* Agrega un espaciado interno */
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+}
+
+/* Estilos para la imagen */
+.slide img {
+    max-width: 95%; /* Limita el ancho de la imagen al 50% del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+}
+/* Estilos para la sección de Publicidades */
+section.ads {
+    padding: 20px; /* Agrega espaciado interno */
+    background-color: #f9f9f9; /* Cambia el color de fondo */
+    text-align: center; /* Centra el contenido de la sección */
+}
+
+/* Estilos para las publicidades */
+div.ad {
+    margin-bottom: 20px; /* Agrega un margen inferior entre las publicidades */
+}
+
+/* Estilos para las imágenes de las publicidades */
+div.ad img {
+    max-width: 15%; /* Asegura que las imágenes se ajusten al ancho del contenedor */
+    height: auto; /* Mantiene la proporción original de las imágenes */
+    display: block; /* Elimina cualquier espacio adicional debajo de las imágenes */
+    margin: 0 auto; /* Centra horizontalmente las imágenes */
+}
+/* Estilo base del footer */
+footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    display: flex; /* Utiliza un modelo de caja flexible para alinear las columnas */
+    flex-wrap: wrap; /* Permite que las columnas se envuelvan en pantallas pequeñas */
+    justify-content: space-between; /* Distribuye las columnas horizontalmente */
+}
+
+/* Estilo de cada columna */
+.footer-column {
+    flex: 1; /* Cada columna toma un tercio del ancho en pantallas grandes */
+    margin: 10px; /* Margen exterior para separar las columnas */
+}
+
+/* Estilo de las redes sociales en la segunda columna */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons li {
+    margin: 0 10px; /* Margen entre los íconos de redes sociales */
+}
+
+/* Estilo para pantallas medianas */
+@media (max-width: 768px) {
+    .footer-column {
+        flex: 1; /* Cada columna toma la mitad del ancho en pantallas medianas */
+    }
+}
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 576px) {
+    .footer-column {
+        flex: 1; /* Cada columna toma el ancho completo en pantallas pequeñas */
+    }
+}
+/* Estilo de la imagen del logo en la primera columna */
+.footer-column:nth-child(1) img {
+    width: 80px; /* Ancho reducido a 80 píxeles */
+    height: 80px; /* Alto reducido a 80 píxeles */
+}
+/* Estilos para las publicidades */
+.ad {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .ad img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Media query para dispositivos móviles */
+  @media screen and (max-width: 768px) {
+    .ads {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .ad-large {
+      display: none;
+    }
+  
+    .ad-small {
+      display: block;
+    }
+  }
+  .ad-small {
+    max-width: 1000px;
+    margin-left: 2em;
+    max-height: 1000px;
+  }
+  /* Estilos para el texto de copyright en la tercera columna del footer */
+.footer-column p:last-child {
+    font-size: 14px; /* Tamaño de fuente */
+    color: #888; /* Color del texto (puedes cambiarlo según tu preferencia) */
+    margin-top: 10px; /* Agrega un margen superior para separar el copyright del contenido anterior */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.social-login {
+    margin: 20px 0;
+}
+
+.social-login p {
+    margin-bottom: 10px;
+}
+
+.google-btn,
+.facebook-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.google-btn {
+    background-color: #dd4b39;
+}
+
+.facebook-btn {
+    background-color: #1877f2;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #007bff;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #ff5722; /* Naranja */
+}
+
+p {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #ff5722; /* Naranja */
+    font-weight: bold;
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Estilos para la sección de comentarios */
+.comments {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.comments h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.comment-form {
+    margin-bottom: 20px;
+}
+
+.comment-form h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.comment-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.comment-form input[type="text"],
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.comment-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #0056b3;
+}
+
+.comment-list {
+    max-height: 300px; /* Limita la altura de la lista de comentarios */
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
+}
+
+.comment {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.comment h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.comment p {
+    font-size: 14px;
+}
+
+/* Estilos para los enlaces que funcionan como botones */
+.add-to-cart-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4a7e16;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.add-to-cart-button:hover {
+    background-color: #FF0000; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Estilos para los enlaces que funcionan como botones */
+.add-to-cart-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4a7e16;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.add-to-cart-button:hover {
+    background-color: #FF0000; /* Cambia el color de fondo al pasar el mouse */
+}
+
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos de productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto {
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100%;
+}
+
+.agregar {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.agregar:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos del carrito */
+.carrito {
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.carrito h2 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.lista-carrito img {
+    max-width: 50px;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.comprar {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.comprar:hover {
+    background-color: #1f8031;
+}
+
+.seguir-comprando {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.seguir-comprando:hover {
+    text-decoration: underline;
+    color: #007BFF;
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+}
+
+/* Estilos para los productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.producto p {
+    font-size: 16px;
+    color: #333;
+}
+
+.producto button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.producto button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para el carrito */
+.carrito {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.carrito h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.comprar {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.comprar:hover {
+    background-color: #45a049;
+}
+
+.seguir-comprando {
+    font-size: 16px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.seguir-comprando:hover {
+    text-decoration: underline;
+}
+.agregar {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.agregar:hover {
+    background-color: #2980b9;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+.comprar {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.comprar:hover {
+    background-color: #45a049;
+}
+
+.seguir-comprando {
+    font-size: 16px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.seguir-comprando:hover {
+    text-decoration: underline;
+}
+/* Estilos para el carrito en dispositivos más pequeños */
+@media (max-width: 768px) {
+    .carrito {
+        padding: 10px;
+    }
+
+    .carrito h2 {
+        font-size: 20px;
+    }
+
+    table {
+        font-size: 14px;
+        width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+    }
+
+    th, td {
+        padding: 5px; /* Reduce el espacio entre celdas */
+        text-align: center; /* Centra el texto en las celdas */
+    }
+
+    .comprar {
+        font-size: 14px;
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+
+    .seguir-comprando {
+        font-size: 14px;
+        margin-top: 10px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: #333;
+    }
+}
+
+/* Estilos para dispositivos aún más pequeños (p. ej., teléfonos muy pequeños) */
+@media (max-width: 480px) {
+    .carrito h2 {
+        font-size: 18px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    .comprar {
+        font-size: 12px;
+        padding: 8px 16px;
+        margin-top: 5px;
+    }
+
+    .seguir-comprando {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+}
+/* Estilos para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+    /* Coloca los estilos específicos para móviles aquí */
+    body {
+        font-size: 16px; /* Cambia el tamaño de fuente para móviles */
+    }
+    /* Ajusta los estilos de navegación, encabezado, etc. */
+}
+
+/* Otros estilos generales */
+@media (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+}
+
+/* Estilos para la sección Acerca de Nosotros */
+.acerca-de {
+    background-color: #f7f7f7; /* Color de fondo */
+    padding: 20px; /* Espaciado interior */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilos para el título de la sección Acerca de Nosotros */
+.acerca-de h2 {
+    font-size: 24px; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para los párrafos en la sección Acerca de Nosotros */
+.acerca-de p {
+    font-size: 16px; /* Tamaño de fuente */
+    color: #666; /* Color del texto */
+    margin-bottom: 10px; /* Espaciado inferior entre párrafos */
+}
+
+/* Estilos para la sección Contacto */
+.contacto {
+    background-color: #f7f7f7; /* Color de fondo */
+    padding: 20px; /* Espaciado interior */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para el título de la sección Contacto */
+.contacto h2 {
+    font-size: 24px; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para el formulario en la sección Contacto */
+.contacto form {
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilos para los elementos del formulario */
+.contacto label {
+    display: block; /* Hace que las etiquetas estén en una línea diferente */
+    font-size: 16px; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+    margin-bottom: 5px; /* Espaciado inferior entre etiquetas */
+}
+
+.contacto input[type="text"],
+.contacto input[type="email"],
+.contacto textarea {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interior */
+    margin-bottom: 10px; /* Espaciado inferior entre campos */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+.contacto button[type="submit"] {
+    background-color: #333; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interior del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño de fuente del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
