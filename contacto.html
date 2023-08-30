@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cuccinare - Contacto</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li> <!-- Enlace de regreso al inicio -->
+                <li><a href="productos.html">Contacto</a></li>
+                <li><a href="login.html">Iniciar sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="acerca-de">
+            <h2>Acerca de Nosotros</h2>
+            <p>Somos una empresa comprometida con el medioambiente, todos nuestros productos son reciclables.</p>
+            <p>Nuestro equipo está formado por profesionales apasionados por hacer feliz a la gente</p>
+            <p>Estamos ubicados en San Miguel de Tucumán.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d23776.527598665685!2d-65.20204629143284!3d-26.839517099691466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smapas!5e0!3m2!1ses-419!2sar!4v1693354723992!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contacto">
+            <h2>Atencion</h2>
+            <p>Asesoria las 24hs</p>
+            <form action="procesar_formulario.php" method="POST">
+
+            </form>
+        </section>
+        <section class="contacto">
+            <h1>Contacto</h1>
+            <p>¿Tienes alguna pregunta o comentario? ¡Contáctanos!</p>
+            <form action="procesar_formulario.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <a href="error404.html">Enviar</a>
+            </form>
+        </section>
+    </main>
+    </main>
+</body>
+</html>
