@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilo para ocultar los productos adicionales */
+        .product:nth-child(n+6) {
+            display: none;
+        }
+
+        /* Estilo para mostrar más productos al hacer clic en el botón "Ver Más" */
+        #ver-mas:checked ~ .product:nth-child(n+6) {
+            display: block;
+        }
+    </style>
+    <title>Cuccinare - Productos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li> <!-- Enlace de regreso al inicio -->
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Iniciar sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Nuestros Productos de Cocina</h1>
+
+        <div class="product-list">
+            <!-- Producto 1 -->
+            <div class="product">
+                <img src="https://lecasaprofesional.com/wp-content/uploads/2021/08/web_41002730l_01-1.jpg" alt="Guantes anti cortes">
+                <h2>Guantes anti cortes</h2>
+                <p>Los guantes anti cortes son perfectos para mantener tus manos seguras al cortar ingredientes en la cocina.</p>
+                <span class="price">$14.99</span>
+                <a href="carrito.html" class="add-to-cart-button">Ir al Carrito</a> 
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_620766-MLA46490127718_062021-F.webp" alt="Cortador de papas">
+                <h2>Cortador de papas</h2>
+                <p>Este cortador de papas te ayudará a obtener rodajas perfectas y uniformes de papas para tus comidas.</p>
+                <span class="price">$19.99</span>
+                <a href="carrito.html" class="add-to-cart-button">Ir al Carrito</a> 
+            </div>
+            <!-- Producto 3 -->
+            <div class="product">
+                <img src="https://images.fravega.com/f300/bfacf64766263d43bb06e6ebcaf498b8.jpg.webp" alt="Abrelatas">
+                <h2>Abrelatas</h2>
+                <p>Este abrelatas de alta calidad te permite abrir latas de manera fácil y rápida.</p>
+                <span class="price">$9.99</span>
+                <a href="carrito.html" class="add-to-cart-button">Ir al Carrito</a> 
+            </div>
+            <!-- Producto 4 -->
+            <div class="product">
+                <img src="https://media.revistaad.es/photos/637b30901f22cbb2f17f181c/master/w_1600,c_limit/7171EvuIDFL._AC_SL1500_.jpg" alt="Tijera de hierbas">
+                <h2>Tijera de hierbas</h2>
+                <p>Esta tijera de hierbas es perfecta para picar finamente hierbas frescas para tus platos favoritos.</p>
+                <span class="price">$12.99</span>
+                <a href="carrito.html" class="add-to-cart-button">Ir al Carrito</a> 
+            </div>
+            <!-- Producto 5 -->
+            <div class="product">
+                <img src="https://lavozdelmuro.net/wp-content/uploads/2015/01/17_gadgets_creativos_cocina_1-1.jpg" alt="Cucharón para caldos y sopas del monstruo del Lago Nahuel Huapi">
+                <h2>Cucharón para caldos y sopas</h2>
+                <p>Este cucharón es perfecto para servir deliciosos caldos y sopas como el monstruo del Lago Nahuel Huapi.</p>
+                <span class="price">$8.99</span>
+                <a href="carrito.html" class="add-to-cart-button">Ir al Carrito</a> 
+            </div>
+
+            <!-- Botón "Ver Más" para cargar productos adicionales -->
+            <input type="checkbox" id="ver-mas" class="hidden">
+            <label for="ver-mas">Ver Más Productos</label>
+
+            <!-- Producto 6 al 10 (ocultos inicialmente) -->
+            <div class="product">
+                <img src="https://media.revistaad.es/photos/637b302c5760daf31075ca10/master/w_1600,c_limit/1366_2000.jpeg" alt="Envasadora al vacío">
+                <h2>Envasadora al vacío</h2>
+                <p>Esta envasadora al vacío te permite conservar tus alimentos frescos por más tiempo.</p>
+                <span class="price">$34.99</span>
+                <a href="carrito.html" class="add-to-cart-button">Ir al Carrito</a> 
+            </div>
+
+            <div class="product">
+                <img src="https://media.revistaad.es/photos/637b32db8b774040c55f8853/master/w_1600,c_limit/6134wZZ8n+L._AC_SL1000_.jpg" alt="Sartén parrilla 3 en 1">
+                <h2>Sartén parrilla 3 en 1</h2>
+                <p>Esta sartén parrilla 3 en 1 es perfecta para cocinar carnes a la parrilla y otros platos deliciosos.</p>
+                <span class="price">$29.99</span>
+                <a href="carrito.html" class="add-to-cart-button">Ir al Carrito</a> 
+            </div>
+
+            <div class="product">
+                <img src="https://lh4.googleusercontent.com/any22HUCQEp4pPORWX5KYz-29mvYmK5pIQUVduW3OOdlTRv58d3OpLZ5hP3U6FI5j6Bkxgnf3tjVTDMp67QRBsaqpvH9UuiT-fcsuKvgZWJIluB3gb4IXM4J4XzswhoM5_1O3vIBquWN5DiI_w" alt="Dispensador de aceite">
+                <h2>Dispensador de aceite</h2>
+                <p>Este dispensador de aceite te permite controlar fácilmente la cantidad de aceite en tus comidas.</p>
+                <span class="price">$14.99</span>
+                <a href="carrito.html" class="add-to-cart-button">Ir al Carrito</a> 
+            </div>
+
+            <div class="product">
+                <img src="https://lh4.googleusercontent.com/z1HQJdrWhjbLXWJfuakKSLhM_Zsl_lUeBYSVkGP3grxdwFgV5gUy1DmhQz9T5DB6cC84F0U6UmwO0rLbrHSN7RrozV7yeVtgx5QysrI18DgZB6F-Uye2MnhM1y_o96Q3G7GGVXnKRefwqk6KLw" alt="Organizador de fregadero">
+                <h2>Organizador de fregadero</h2>
+                <p>Este organizador de fregadero te ayuda a mantener tu cocina ordenada y tus utensilios al alcance.</p>
+                <span class="price">$9.99</span>
+                <a href="carrito.html" class="add-to-cart-button">Ir al Carrito</a> 
+            </div>
+
+            <div class="product">
+                <img src="https://lh3.googleusercontent.com/4zAqLthaPlIYZuSRMZr_2U7PFKt8IYxBFZR2g3lv02q0VNbDDlhu3tiBm0_YpdI34Spsd5RESc1Ikbb8aMfHoSLFL1aoIEeQmyyLOCjaBp65mgNYzEmnXVVh_71JJhJHGqf6VYgboHd7Lrkvtw" alt="Afilador de cuchillos y tijeras">
+                <h2>Afilador de cuchillos y tijeras</h2>
+                <p>Este afilador esencial mantendrá tus cuchillos y tijeras afilados y listos para cualquier tarea de cocina.</p>
+                <span class="price">$11.99</span>
+                <a href="carrito.html" class="add-to-cart-button">Ir al Carrito</a> 
+            </div>
+        </div>
+                <!-- Sección de Comentarios -->
+                <section class="comments">
+                    <h2>Comentarios</h2>
+        
+                    <!-- Formulario de Comentarios -->
+                    <div class="comment-form">
+                        <h3>Deja un comentario</h3>
+                        <!-- formulario para que los usuarios dejen sus comentarios -->
+                        <!-- Por ejemplo, un formulario con campos para el nombre y el comentario -->
+                        <form id="commentForm">
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="name" required>
+                            <label for="comment">Comentario:</label>
+                            <textarea id="comment" name="comment" required></textarea>
+                            <button type="submit">Enviar Comentario</button>
+                        </form>
+                    </div>
+        
+                    <!-- Lista de Comentarios Existente -->
+                    <div class="comment-list">
+                        <!-- mostrar la lista de comentarios existentes -->
+                        <div class="comment">
+                            <h4>Estelita</h4>
+                            <p>¡Este producto es increíble! Realmente me ha ayudado en la cocina.</p>
+                        </div>
+                        <div class="comment">
+                            <h4>Jose</h4>
+                            <p>No puedo creer lo útil que es este producto. ¡Lo recomiendo totalmente!</p>
+                            <div class="comment">
+                                <h4>Manuela</h4>
+                                <p>¡Esta pagina es genial!.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer-column">
+            <!-- Columna 3: Información optativa -->
+            <p>&copy; 2023 Cuccinare. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
